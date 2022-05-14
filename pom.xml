@@ -23,6 +23,7 @@
 		<spring-cloud.version>2021.0.2</spring-cloud.version>
 		<spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
 		<mybatis-plus.version>3.5.1</mybatis-plus.version>
+		<mysql-connect.version>8.0.27</mysql-connect.version>
 	</properties>
 
 	<dependencyManagement>
@@ -47,6 +48,11 @@
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-boot-starter</artifactId>
 				<version>${mybatis-plus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connect.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

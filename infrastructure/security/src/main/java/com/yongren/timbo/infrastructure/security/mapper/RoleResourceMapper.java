@@ -2,6 +2,7 @@ package com.yongren.timbo.infrastructure.security.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yongren.timbo.infrastructure.security.entity.RoleResource;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author Administrator
@@ -9,6 +10,7 @@ import com.yongren.timbo.infrastructure.security.entity.RoleResource;
  * @createDate 2022-05-15 01:32:35
  * @Entity com.yongren.timbo.infrastructure.entity.RoleResource
  */
+@Mapper
 public interface RoleResourceMapper extends BaseMapper<RoleResource> {
 
 }
