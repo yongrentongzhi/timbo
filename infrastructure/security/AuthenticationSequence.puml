@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+title 未认证时使用密码登陆
+
+autonumber
+actor browser
+boundary security
+database mysql
+database redis
+boundary application
+
+browser-> security: 访问application的请求
+security-> browser: 重定向到登陆页面
+browser->security: 使用用户名和密码进行登陆
+security->database: 查询用户
+alt 成功查询到用户
+database-> security: 用户记录
+security->redis: 存储jwt
+security->browser : jwt的id
+else 未查询到用户
+security->browser: 抛出异常
+end
+@enduml
