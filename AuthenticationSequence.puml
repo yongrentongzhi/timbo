@@ -3,14 +3,16 @@
 title 未认证时使用密码登陆
 
 autonumber
+
 actor browser
+boundary gateway
 boundary security
 database mysql
 database redis
 boundary application
 
-browser-> security: 访问application的请求
-security-> browser: 重定向到登陆页面
+browser->gateway:访问application内容或登陆页面
+gateway->security:gateway发现没有授权,重定向到security指定的登陆页面
 browser->security: 使用用户名和密码进行登陆
 security->database: 查询用户
 alt 成功查询到用户

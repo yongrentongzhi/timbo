@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yongren.timbo.infrastructure.security.mapper.ResourceMapper">
+<mapper namespace="com.yongren.timbo.infrastructure.security.dao.mysql.mapper.ResourceMapper">
 
     <resultMap id="BaseResultMap" type="com.yongren.timbo.infrastructure.security.entity.Resource">
         <id property="id" column="id" jdbcType="INTEGER"/>

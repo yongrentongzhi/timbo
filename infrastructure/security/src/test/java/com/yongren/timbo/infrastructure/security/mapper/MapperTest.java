@@ -1,5 +1,6 @@
 package com.yongren.timbo.infrastructure.security.mapper;
 
+import com.yongren.timbo.infrastructure.security.dao.mysql.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

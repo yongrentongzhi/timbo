@@ -1,4 +1,4 @@
-package com.yongren.timbo.infrastructure.security.mapper;
+package com.yongren.timbo.infrastructure.security.dao.mysql.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yongren.timbo.infrastructure.security.entity.User;
