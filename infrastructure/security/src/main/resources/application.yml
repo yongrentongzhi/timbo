@@ -4,3 +4,7 @@ spring:
     url: jdbc:mysql://192.168.2.202:3306/timbo
     username: root
     password: hduap001
+server:
+  port: 8180
+  servlet:
+    context-path: /timbo-security

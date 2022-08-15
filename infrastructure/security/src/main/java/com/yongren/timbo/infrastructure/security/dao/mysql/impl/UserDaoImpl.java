@@ -47,4 +47,9 @@ public class UserDaoImpl implements UserDao {
         user.setRoleList(roles);
         return user;
     }
+
+    @Override
+    public boolean registerUser(User user, Role role) {
+        return false;
+    }
 }
